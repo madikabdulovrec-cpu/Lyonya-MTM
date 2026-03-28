@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Эмульсии — MTM-DIAGNOSTICS AND EQVI-SOLUTIONS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-light" id="navbar">
+    <div class="container">
+        <a href="index.html" class="nav-logo">MTM<span>-DIAGNOSTICS</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="emulsions.html" class="active">Эмульсии</a></li>
+            <li><a href="cleaning.html">Моющие средства</a></li>
+            <li><a href="diagnostics.html">Диагностика</a></li>
+        </ul>
+        <a href="index.html#contacts" class="nav-cta">Связаться</a>
+        <button class="nav-burger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" onclick="toggleMenu()">&times;</button>
+    <a href="index.html" onclick="toggleMenu()">Главная</a>
+    <a href="emulsions.html" onclick="toggleMenu()">Эмульсии</a>
+    <a href="cleaning.html" onclick="toggleMenu()">Моющие средства</a>
+    <a href="diagnostics.html" onclick="toggleMenu()">Диагностика</a>
+    <a href="index.html#contacts" onclick="toggleMenu()">Контакты</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <div class="container">
+        <div class="hero-badge">Промышленная химия</div>
+        <h1>Эмульсии и <span class="highlight">защитные составы</span></h1>
+        <p>Полимерно-восковые эмульсии для пылеподавления, гидрофобизации асфальтобетона и защиты бетонных конструкций. Безопасны для окружающей среды.</p>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section products" style="background:#f8f9fc;">
+    <div class="container">
+        <div class="fade-up">
+            <span class="section-label">Эмульсии</span>
+            <h2 class="section-title">Пылеподавление и <span class="gradient-text">гидрофобизация</span></h2>
+            <p class="section-subtitle">Высокоэффективные полимерно-восковые эмульсии для грунтовых дорог, хвостохранилищ и дорожных покрытий. Не являются реагентами.</p>
+        </div>
+
+        <div class="products-grid" style="margin-top:40px;">
+            <div class="product-card fade-up">
+                <span class="product-tag tag-emulsion">Эмульсия</span>
+                <h4>Пылеподавление для грунтовых дорог</h4>
+                <p>Полимерно-восковая эмульсия для грунтовых дорог и технологических проездов. Диапазон от -45&deg;C до +65&deg;C. Устойчива к дождям и тяжёлому транспорту.</p>
+                <div class="product-ratio">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+                    2,0 л/м²
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">Подробнее <svg viewBox="0 0 24 24" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+                <div class="expand-content">
+                    <div class="expand-inner">
+                        <h5>Принцип действия:</h5>
+                        <p>После внесения эмульсии пылящие частицы склеиваются, образуя агломерат полимерно-грунтового матрикса с остаточной липкостью. Новые частицы пыли интегрируются в обработанную поверхность.</p>
+                        <ul>
+                            <li>Не вымывается дождевыми осадками</li>
+                            <li>Устойчива к температурным колебаниям (-45&deg;C...+65&deg;C)</li>
+                            <li>Пыль не поднимается при движении тяжёлых грузовиков</li>
+                            <li>Сцепление автомобильных шин не ухудшается</li>
+                            <li>Взрывные работы не разрушают обработанный слой</li>
+                            <li>Расход: 2,0 л/м²</li>
+                        </ul>
+                        <p style="margin-top:8px;">Не является реагентом. Безопасность подтверждена Государственными лабораториями.</p>
+                    </div>
+                </div>
+                <p class="product-price">Цена по запросу</p>
+            </div>
+
+            <div class="product-card fade-up">
+                <span class="product-tag tag-emulsion">Эмульсия</span>
+                <h4>Пылеподавление на хвостохранилищах</h4>
+                <p>Укрепление наружного пылящего слоя на хвостохранилищах и золоотвалах. Исключает ветровую эрозию. Эффективность 12 месяцев.</p>
+                <div class="product-ratio">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+                    0,5 л/м²
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">Подробнее <svg viewBox="0 0 24 24" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+                <div class="expand-content">
+                    <div class="expand-inner">
+                        <h5>Принцип действия:</h5>
+                        <ul>
+                            <li>Укрепление наружного пылящего слоя</li>
+                            <li>Исключение ветровой эрозии</li>
+                            <li>Не вымывается дождевыми осадками</li>
+                            <li>Диапазон: -45&deg;C...+65&deg;C</li>
+                            <li>Эффективность в течение 12 месяцев</li>
+                            <li>Расход: 0,5 л/м²</li>
+                            <li>Стандартный технологический транспорт с системой полива/орошения</li>
+                        </ul>
+                        <p style="margin-top:8px;">Не является реагентом. Безопасность подтверждена Государственными лабораториями.</p>
+                    </div>
+                </div>
+                <p class="product-price">Цена по запросу</p>
+            </div>
+
+            <div class="product-card fade-up">
+                <span class="product-tag tag-emulsion">Эмульсия</span>
+                <h4>Гидрофобизация асфальтобетона</h4>
+                <p>Придание гидрофобных свойств дорожному покрытию. Снижение аквапланирования, увеличение срока эксплуатации. Диапазон от -25&deg;C до +60&deg;C.</p>
+                <div class="product-ratio">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+                    150 г/м²
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">Подробнее <svg viewBox="0 0 24 24" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+                <div class="expand-content">
+                    <div class="expand-inner">
+                        <h5>Эффекты обработки:</h5>
+                        <ul>
+                            <li>Покрытие приобретает гидрофобные свойства и быстрое водоотведение</li>
+                            <li>Уменьшается толщина слоя воды — снижение риска аквапланирования</li>
+                            <li>Недопущение проникновения воды в межсезонье</li>
+                            <li>Снижение разрушения при отрицательных температурах</li>
+                            <li>Не вымывается дождями, устойчива к экстремальным температурам</li>
+                            <li>Сцепление шин не ухудшается</li>
+                            <li>При мойке пыль скатывается в систему водоотведения</li>
+                            <li>Расход: 150 г/м²</li>
+                        </ul>
+                        <p style="margin-top:8px;">Не является реагентом. Безопасность подтверждена Государственными лабораториями.</p>
+                    </div>
+                </div>
+                <p class="product-price">Цена по запросу</p>
+            </div>
+
+            <div class="product-card fade-up">
+                <span class="product-tag tag-protect">Защитный состав</span>
+                <h4>Плёнкообразующая дисперсия для бетона</h4>
+                <p>Защита бетона от ускоренного обезвоживания при формовании. Заменяет увлажнение и укрывные работы. Исключает образование усадочных трещин.</p>
+                <div class="product-ratio">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+                    200–400 г/м²
+                </div>
+                <button class="expand-btn" onclick="toggleExpand(this)">Подробнее <svg viewBox="0 0 24 24" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+                <div class="expand-content">
+                    <div class="expand-inner">
+                        <h5>Свойства и применение:</h5>
+                        <ul>
+                            <li>Улучшенные условия для гидратации бетона</li>
+                            <li>Повышение прочностных характеристик</li>
+                            <li>Снижение эффекта «шелушения» бетонных конструкций</li>
+                            <li>Исключение образования усадочных трещин</li>
+                            <li>Наносится методом поверхностного орошения: 200–400 г/м²</li>
+                            <li>Горизонтальные поверхности — при достижении проектной толщины</li>
+                            <li>Вертикальные — при снятии опалубки</li>
+                            <li>Поставка в ёмкостях от 20 до 1000 литров</li>
+                        </ul>
+                        <p style="margin-top:8px;">Безопасность подтверждена Государственными лабораториями. Применяется при положительных температурах.</p>
+                    </div>
+                </div>
+                <p class="product-price">Цена по запросу</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="section cta-section">
+    <div class="container">
+        <div class="cta-box fade-up">
+            <h2>Нужна эмульсия для вашего объекта?</h2>
+            <p>Свяжитесь с нами для расчёта объёмов и получения коммерческого предложения</p>
+            <div class="cta-buttons">
+                <a href="tel:+77760101801" class="btn btn-white">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    +7 776 01 01 801
+                </a>
+                <a href="index.html#contacts" class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.4);">
+                    Оставить заявку
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-logo">MTM<span>-DIAGNOSTICS</span></div>
+            <ul class="footer-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="emulsions.html">Эмульсии</a></li>
+                <li><a href="cleaning.html">Моющие средства</a></li>
+                <li><a href="diagnostics.html">Диагностика</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2024 ТОО "MTM-DIAGNOSTICS AND EQVI-SOLUTIONS". БИН: 230640040136</span>
+            <span>г. Алматы, Казахстан</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) navbar.classList.add('scrolled');
+        else navbar.classList.remove('scrolled');
+    });
+
+    function toggleMenu() {
+        document.getElementById('mobileMenu').classList.toggle('open');
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    function toggleExpand(btn) {
+        const content = btn.nextElementSibling;
+        const isOpen = content.classList.contains('open');
+        const section = btn.closest('.products-grid');
+        if (section) {
+            section.querySelectorAll('.expand-content.open').forEach(el => {
+                el.classList.remove('open');
+                el.style.maxHeight = null;
+                const prevBtn = el.previousElementSibling;
+                if (prevBtn && prevBtn.classList.contains('expand-btn')) prevBtn.classList.remove('open');
+            });
+        }
+        if (!isOpen) {
+            content.classList.add('open');
+            content.style.maxHeight = content.scrollHeight + 'px';
+            btn.classList.add('open');
+            btn.innerHTML = 'Свернуть <svg viewBox="0 0 24 24" stroke-width="2.5" style="width:14px;height:14px;stroke:currentColor;fill:none;transform:rotate(180deg)"><polyline points="6 9 12 15 18 9"/></svg>';
+        } else {
+            content.classList.remove('open');
+            content.style.maxHeight = null;
+            btn.classList.remove('open');
+            btn.innerHTML = 'Подробнее <svg viewBox="0 0 24 24" stroke-width="2.5" style="width:14px;height:14px;stroke:currentColor;fill:none"><polyline points="6 9 12 15 18 9"/></svg>';
+        }
+    }
+</script>
+
+</body>
+</html>
