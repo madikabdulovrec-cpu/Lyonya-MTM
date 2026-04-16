@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Диагностика МТМ — MTM-DIAGNOSTICS AND EQVI-SOLUTIONS</title>
+    <meta name="description" content="Бесконтактная магнитная томография трубопроводов, резервуаров, опор мостов и фундаментов. Без вскрышных работ и остановки эксплуатации. 44+ страны, 21 000+ км опыта.">
+    <meta name="theme-color" content="#0066CC">
+    <meta property="og:title" content="МТМ диагностика — бесконтактное обследование">
+    <meta property="og:description" content="Послойное сканирование металла без вскрытия. Трубопроводы, мосты, фундаменты, резервуары.">
+    <meta property="og:image" content="photos/pipeline-hero.jpg">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230066CC'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='14' font-weight='800' text-anchor='middle' fill='white'%3EM%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -40,7 +47,8 @@
 </div>
 
 <!-- PAGE HERO -->
-<section class="page-hero">
+<section class="page-hero page-hero-with-img">
+    <div class="page-hero-img-bg" style="background-image:url('photos/pipeline-hero.jpg');"></div>
     <div class="container">
         <div class="hero-badge">Бесконтактная диагностика</div>
         <h1>Метод <span class="highlight">магнитной томографии</span></h1>
@@ -60,90 +68,110 @@
         </div>
 
         <div class="diag-cards">
-            <div class="diag-card fade-up">
-                <div class="diag-card-icon">
-                    <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+            <div class="diag-card diag-card-with-img fade-up">
+                <div class="diag-card-img">
+                    <img src="photos/pipeline-ground.jpg" alt="Трубопровод" loading="lazy">
                 </div>
-                <h3>Трубопроводы</h3>
-                <p>Водопроводы, теплосети, нефтепроводы, газопроводы — выявление коррозии, эрозии, трещин и напряженно-деформированных участков.</p>
-                <button class="expand-btn" onclick="toggleExpand(this)">Подробнее <svg viewBox="0 0 24 24" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
-                <div class="expand-content">
-                    <div class="expand-inner">
-                        <h5>Что выявляет диагностика трубопроводов:</h5>
-                        <ul>
-                            <li>Участки с концентраторами механических напряжений</li>
-                            <li>Нарушение толщины стенки (коррозионный/эрозионный износ)</li>
-                            <li>Трещины в кольцевых и продольных сварных швах</li>
-                            <li>Зоны термического влияния сварки</li>
-                            <li>Напряженно-деформированное состояние от локальных нагрузок</li>
-                        </ul>
-                        <div style="margin-top:12px;">
-                            <span class="detail-badge">Теплосети</span>
-                            <span class="detail-badge">Газопроводы</span>
-                            <span class="detail-badge">Нефтепроводы</span>
-                            <span class="detail-badge">Водопроводы</span>
+                <div class="diag-card-content">
+                    <div class="diag-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                    </div>
+                    <h3>Трубопроводы</h3>
+                    <p>Водопроводы, теплосети, нефтепроводы, газопроводы — выявление коррозии, эрозии, трещин и напряженно-деформированных участков.</p>
+                    <button class="expand-btn" onclick="toggleExpand(this)">Подробнее <svg viewBox="0 0 24 24" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+                    <div class="expand-content">
+                        <div class="expand-inner">
+                            <h5>Что выявляет диагностика трубопроводов:</h5>
+                            <ul>
+                                <li>Участки с концентраторами механических напряжений</li>
+                                <li>Нарушение толщины стенки (коррозионный/эрозионный износ)</li>
+                                <li>Трещины в кольцевых и продольных сварных швах</li>
+                                <li>Зоны термического влияния сварки</li>
+                                <li>Напряженно-деформированное состояние от локальных нагрузок</li>
+                            </ul>
+                            <div style="margin-top:12px;">
+                                <span class="detail-badge">Теплосети</span>
+                                <span class="detail-badge">Газопроводы</span>
+                                <span class="detail-badge">Нефтепроводы</span>
+                                <span class="detail-badge">Водопроводы</span>
+                            </div>
+                            <p style="margin-top:12px;">Ранжирование степени опасности участков: <strong>хорошее</strong>, <strong>допустимое</strong>, <strong>недопустимое</strong>. По итогам — полный отчёт с GPS-координатами и картами-схемами пролегания.</p>
                         </div>
-                        <p style="margin-top:12px;">Ранжирование степени опасности участков: <strong>хорошее</strong>, <strong>допустимое</strong>, <strong>недопустимое</strong>. По итогам — полный отчёт с GPS-координатами и картами-схемами пролегания.</p>
                     </div>
                 </div>
             </div>
-            <div class="diag-card fade-up">
-                <div class="diag-card-icon">
-                    <svg viewBox="0 0 24 24"><path d="M3 21h18v-2H3v2zM5 13h2v6H5v-6zm4-4h2v10H9V9zm4-4h2v14h-2V5zm4 6h2v8h-2v-8z"/></svg>
+            <div class="diag-card diag-card-with-img fade-up">
+                <div class="diag-card-img">
+                    <img src="photos/bridge-supports.jpg" alt="Опоры мостов" loading="lazy">
                 </div>
-                <h3>Опоры мостов</h3>
-                <p>Определение степени износа опор мостов, в том числе подводных частей мостовых опор и подпорных стен.</p>
-                <button class="expand-btn" onclick="toggleExpand(this)">Подробнее <svg viewBox="0 0 24 24" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
-                <div class="expand-content">
-                    <div class="expand-inner">
-                        <h5>Диагностика мостовых конструкций:</h5>
-                        <ul>
-                            <li>Оценка состояния железобетонных опор без контакта</li>
-                            <li>Обследование подводных частей опор (модуль SWIM SKIF)</li>
-                            <li>Выявление коррозии арматуры и бетона</li>
-                            <li>Определение участков потери несущей способности</li>
-                        </ul>
-                        <p style="margin-top:12px;">Работы проводятся без ограничения движения транспорта и без водолазных работ для подводных частей.</p>
+                <div class="diag-card-content">
+                    <div class="diag-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M3 21h18v-2H3v2zM5 13h2v6H5v-6zm4-4h2v10H9V9zm4-4h2v14h-2V5zm4 6h2v8h-2v-8z"/></svg>
+                    </div>
+                    <h3>Опоры мостов</h3>
+                    <p>Определение степени износа опор мостов, в том числе подводных частей мостовых опор и подпорных стен.</p>
+                    <button class="expand-btn" onclick="toggleExpand(this)">Подробнее <svg viewBox="0 0 24 24" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+                    <div class="expand-content">
+                        <div class="expand-inner">
+                            <h5>Диагностика мостовых конструкций:</h5>
+                            <ul>
+                                <li>Оценка состояния железобетонных опор без контакта</li>
+                                <li>Обследование подводных частей опор (модуль SWIM SKIF)</li>
+                                <li>Выявление коррозии арматуры и бетона</li>
+                                <li>Определение участков потери несущей способности</li>
+                            </ul>
+                            <p style="margin-top:12px;">Работы проводятся без ограничения движения транспорта и без водолазных работ для подводных частей.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="diag-card fade-up">
-                <div class="diag-card-icon">
-                    <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/></svg>
+            <div class="diag-card diag-card-with-img fade-up">
+                <div class="diag-card-img">
+                    <img src="photos/foundation.jpg" alt="Фундаменты зданий" loading="lazy">
                 </div>
-                <h3>Фундаменты зданий</h3>
-                <p>Бесконтактная диагностика фундаментов зданий из железобетонных конструкций с оценкой степени износа.</p>
-                <button class="expand-btn" onclick="toggleExpand(this)">Подробнее <svg viewBox="0 0 24 24" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
-                <div class="expand-content">
-                    <div class="expand-inner">
-                        <h5>Диагностика фундаментов:</h5>
-                        <ul>
-                            <li>Определение степени износа фундамента без вскрытия</li>
-                            <li>Выявление участков с потерей несущей способности</li>
-                            <li>Оценка состояния арматурного каркаса</li>
-                            <li>Прогнозирование остаточного ресурса</li>
-                        </ul>
-                        <p style="margin-top:12px;">Особенно актуально для зданий старого фонда, промышленных сооружений и объектов с подозрением на деформацию.</p>
+                <div class="diag-card-content">
+                    <div class="diag-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zM7 10h2v7H7zm4-3h2v10h-2zm4 6h2v4h-2z"/></svg>
+                    </div>
+                    <h3>Фундаменты зданий</h3>
+                    <p>Бесконтактная диагностика фундаментов зданий из железобетонных конструкций с оценкой степени износа.</p>
+                    <button class="expand-btn" onclick="toggleExpand(this)">Подробнее <svg viewBox="0 0 24 24" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+                    <div class="expand-content">
+                        <div class="expand-inner">
+                            <h5>Диагностика фундаментов:</h5>
+                            <ul>
+                                <li>Определение степени износа фундамента без вскрытия</li>
+                                <li>Выявление участков с потерей несущей способности</li>
+                                <li>Оценка состояния арматурного каркаса</li>
+                                <li>Прогнозирование остаточного ресурса</li>
+                            </ul>
+                            <p style="margin-top:12px;">Особенно актуально для зданий старого фонда, промышленных сооружений и объектов с подозрением на деформацию.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="diag-card fade-up">
-                <div class="diag-card-icon">
-                    <svg viewBox="0 0 24 24"><path d="M2 20h20v2H2v-2zm2-8h2v7H4v-7zm4-4h2v11H8V8zm4-6h2v17h-2V2zm4 4h2v13h-2V6zm4 4h2v9h-2v-9z"/></svg>
+            <div class="diag-card diag-card-with-img fade-up">
+                <div class="diag-card-img">
+                    <img src="photos/scheme-underground.jpg" alt="Резервуары и трубы под землёй" loading="lazy">
                 </div>
-                <h3>Резервуары</h3>
-                <p>Бесконтактная диагностика резервуаров для хранения нефтепродуктов, воды и других жидкостей. Выявление дефектов стенок и днища.</p>
-                <button class="expand-btn" onclick="toggleExpand(this)">Подробнее <svg viewBox="0 0 24 24" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
-                <div class="expand-content">
-                    <div class="expand-inner">
-                        <h5>Диагностика резервуаров:</h5>
-                        <ul>
-                            <li>Определение состояния стенок и днища резервуара</li>
-                            <li>Выявление коррозионного и эрозионного износа</li>
-                            <li>Обнаружение трещин и зон концентрации напряжений</li>
-                            <li>Оценка остаточного ресурса конструкции</li>
-                        </ul>
-                        <p style="margin-top:12px;">Диагностика проводится без опорожнения резервуара и без остановки эксплуатации.</p>
+                <div class="diag-card-content">
+                    <div class="diag-card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M2 20h20v2H2v-2zm2-8h2v7H4v-7zm4-4h2v11H8V8zm4-6h2v17h-2V2zm4 4h2v13h-2V6zm4 4h2v9h-2v-9z"/></svg>
+                    </div>
+                    <h3>Резервуары</h3>
+                    <p>Бесконтактная диагностика резервуаров для хранения нефтепродуктов, воды и других жидкостей. Выявление дефектов стенок и днища.</p>
+                    <button class="expand-btn" onclick="toggleExpand(this)">Подробнее <svg viewBox="0 0 24 24" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg></button>
+                    <div class="expand-content">
+                        <div class="expand-inner">
+                            <h5>Диагностика резервуаров:</h5>
+                            <ul>
+                                <li>Определение состояния стенок и днища резервуара</li>
+                                <li>Выявление коррозионного и эрозионного износа</li>
+                                <li>Обнаружение трещин и зон концентрации напряжений</li>
+                                <li>Оценка остаточного ресурса конструкции</li>
+                            </ul>
+                            <p style="margin-top:12px;">Диагностика проводится без опорожнения резервуара и без остановки эксплуатации.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,6 +239,108 @@
     </div>
 </section>
 
+<!-- CONSEQUENCES — why diagnostics matters -->
+<section class="section consequences-section">
+    <div class="container">
+        <div class="fade-up consequences-intro">
+            <span class="section-label" style="color:#b91c1c;">Зачем нужна диагностика</span>
+            <h2 class="section-title">Цена <span style="background:linear-gradient(135deg,#dc2626,#ef4444);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">пропущенного дефекта</span></h2>
+            <p>Прорывы трубопроводов, утечки нефти и газа, разрушение теплотрасс — последствия отсутствия своевременной диагностики. МТМ выявляет участки риска <strong>до</strong> аварии.</p>
+        </div>
+
+        <div class="consequences-grid fade-up">
+            <div class="photo-card tag-warning">
+                <span class="photo-tag-corner">Газопровод</span>
+                <img src="photos/leak-gas-fire.jpg" alt="Прорыв газопровода с возгоранием" loading="lazy">
+                <div class="photo-plate">
+                    <h4>Прорыв газопровода</h4>
+                    <p>Возгорание и разрушение инфраструктуры</p>
+                </div>
+            </div>
+            <div class="photo-card tag-warning">
+                <span class="photo-tag-corner">Нефтепровод</span>
+                <img src="photos/oil-spill.jpg" alt="Разлив нефти из трубопровода" loading="lazy">
+                <div class="photo-plate">
+                    <h4>Разлив нефти</h4>
+                    <p>Экологический ущерб и санкции</p>
+                </div>
+            </div>
+            <div class="photo-card tag-warning">
+                <span class="photo-tag-corner">Теплотрасса</span>
+                <img src="photos/leak-heating-fountain.jpg" alt="Прорыв теплотрассы" loading="lazy">
+                <div class="photo-plate">
+                    <h4>Прорыв теплотрассы</h4>
+                    <p>Срыв отопительного сезона</p>
+                </div>
+            </div>
+            <div class="photo-card tag-warning">
+                <span class="photo-tag-corner">Водопровод</span>
+                <img src="photos/leak-water-city.jpg" alt="Прорыв водопровода в городе" loading="lazy">
+                <div class="photo-plate">
+                    <h4>Прорыв водопровода</h4>
+                    <p>Затопление, остановка сетей</p>
+                </div>
+            </div>
+            <div class="photo-card tag-warning">
+                <span class="photo-tag-corner">Зимняя авария</span>
+                <img src="photos/leak-oil-winter.jpg" alt="Утечка нефти зимой" loading="lazy">
+                <div class="photo-plate">
+                    <h4>Утечка нефти зимой</h4>
+                    <p>Сложность ликвидации в мороз</p>
+                </div>
+            </div>
+            <div class="photo-card tag-warning">
+                <span class="photo-tag-corner">Под асфальтом</span>
+                <img src="photos/leak-asphalt.jpg" alt="Прорыв воды из-под асфальта" loading="lazy">
+                <div class="photo-plate">
+                    <h4>Прорыв из-под асфальта</h4>
+                    <p>Скрытые дефекты разрушают покрытие</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TECH SHOWCASE -->
+<section class="section tech-showcase">
+    <div class="container">
+        <div class="fade-up">
+            <span class="section-label">Как работает технология</span>
+            <h2 class="section-title">Магнитная томография <span class="gradient-text">в действии</span></h2>
+            <p class="section-subtitle">Послойное сканирование металла трубопровода с применением наземных, авиационных и подводных модулей.</p>
+        </div>
+
+        <div class="tech-grid fade-up">
+            <div class="tech-main-img">
+                <img src="photos/scheme-drones.png" alt="Схема диагностики с применением дронов" loading="lazy">
+            </div>
+            <div class="tech-side">
+                <div class="tech-side-card">
+                    <img src="photos/scheme-magnetic-waves.jpg" alt="Магнитные волны над трубой" loading="lazy">
+                    <div>
+                        <h4>Магнитные поля от металла</h4>
+                        <p>Прибор фиксирует естественное магнитное поле трубы и его аномалии</p>
+                    </div>
+                </div>
+                <div class="tech-side-card">
+                    <img src="photos/scheme-underwater.jpg" alt="Подводная диагностика" loading="lazy">
+                    <div>
+                        <h4>Подводная диагностика</h4>
+                        <p>Сканирование переходов через водные преграды без водолазных работ</p>
+                    </div>
+                </div>
+                <div class="tech-side-card">
+                    <img src="photos/team-work.jpg" alt="Команда диагностов в работе" loading="lazy">
+                    <div>
+                        <h4>Опытные операторы</h4>
+                        <p>Сертифицированные специалисты с многолетним опытом полевых работ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- EQUIPMENT -->
 <section class="section equipment">
     <div class="container">
@@ -271,6 +401,11 @@
         </div>
     </div>
 </section>
+
+<!-- FLOATING CALL -->
+<a href="https://wa.me/77760101801" class="floating-call" aria-label="Написать в WhatsApp" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
 
 <!-- FOOTER -->
 <footer class="footer">
